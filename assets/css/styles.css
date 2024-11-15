@@ -369,10 +369,10 @@ the website, in dark theme
 /*=============== BUTTONS ===============*/
 .button{
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: #B553E6;
   color: #FFF;
   padding: 1rem 1.75rem;
-  border-radius: .5rem;
+  border-radius: .6rem;
   font-weight: var(--font-medium);
   transition: .3s;
 }
