@@ -425,9 +425,14 @@ the website, in dark theme
 .about__details{
   display: grid;
   row-gap: 1rem;
+  padding-top: 40px; 
   margin-bottom: var(--mb-2-5);
 }
 
+/*=============== REVENDEDORA PAGE ===============*/
+
+
+/*==========================================*/
 .about__details-description{
   display: inline-flex;
   column-gap: .5rem;
