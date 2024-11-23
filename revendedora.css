@@ -71,6 +71,8 @@
 }
 .home__title {
     margin-top: 3rem; /* Espaço acima deste título */
+    font-size: 3rem;
+    color: #333;
 }
 @media screen and (max-width: 768px) {
     h1 {
@@ -78,11 +80,35 @@
     }
     .home__title {
         margin-top: 2rem;
+        margin: 0;
+        font-size: 2rem; /* Ajuste conforme seu design */
+        color: #333;
     }
 }
 p { 
     text-align: justify;
 }
+
+.home__header {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre a imagem e o título */
+}
+
+.home__img {
+  width: 180px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 280px;
+  object-fit: cover; /* Garante que a imagem fique proporcional */
+  border-radius: 15%; /* Se quiser a imagem redonda */
+  margin-right: 5px; /* Ajuste aqui também, se necessário */
+}
+
+.home__data {
+  margin-top: 20px; /* Espaçamento entre o título e a descrição */
+}
+
+
+
 
   /*=============== !DAQUI PARA BAIXO STYLES.CSS! ===============*/
   
