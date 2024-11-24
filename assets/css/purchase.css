@@ -1,0 +1,157 @@
+/* Importa fontes e variáveis principais */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #d12ad4da;
+  color: white;
+  font-size: 24px;
+}
+
+.purchase__container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: var(--container-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.purchase__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-size: var(--normal-font-size);
+  margin-bottom: 0.5rem;
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+
+.form__input {
+  padding: 0.75rem;
+  border: 1px solid var(--text-color-light);
+  border-radius: 0.5rem;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  background-color: var(--body-color);
+  outline: none;
+}
+
+.form__input:focus {
+  border-color: var(--first-color);
+}
+
+.button {
+  width: 100%;
+  background-color: var(--first-color);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: var(--normal-font-size);
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #007b8f;
+}
+
+button:active {
+  background-color: #005f66;
+}
+
+/* NOVO - Estilos para a caixa de informações */
+.form__container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form__title {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.form__input:focus {
+  border-color: #008CBA;
+  background-color: #fff;
+}
+
+/* Estilos para o botão de informações */
+.form__button {
+  width: 100%;
+  background-color: #008CBA;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form__button:hover {
+  background-color: #007b8f;
+}
+
+.form__button:active {
+  background-color: #005f66;
+}
+
+/* NOVO - Estilos para o botão Finalizar Compra */
+.finalize-button {
+  width: 35%;
+  background-color: #1b9d42; /* Cor característica do tema */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.finalize-button:hover {
+  background-color: #008f5d;
+}
+
+.finalize-button:active {
+  background-color: #005f66;
+}
