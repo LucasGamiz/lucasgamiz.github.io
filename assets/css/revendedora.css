@@ -476,12 +476,16 @@ the website, in dark theme
 }
 
 .footer__data{
-  display: grid;
   row-gap: .75rem;
+  display: flex; /* Alinha os itens em linha */
+  column-gap: 2rem; /* Adiciona um espaço entre as caixas */
+  flex-wrap: wrap;         /* Permite que os itens se movam para a linha seguinte, se necessário */
+  gap: 2rem;               /* Espaço entre as caixas de informações */
 }
 
 .footer__information{
   font-size: var(--small-font-size);
+  flex: 1 1 30%;           /* Ajuste o tamanho da caixa para que ocupe até 30% do espaço disponível */
 }
 
 .footer__social{

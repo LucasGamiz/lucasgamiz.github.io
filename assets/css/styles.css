@@ -409,9 +409,12 @@ the website, in dark theme
   row-gap: 2rem;
 }
 
-.about__img{
-  width: 280px;
-  justify-self: center;
+.about__img {
+  width: 75%; /* Faz a imagem ocupar toda a largura disponível */
+  height: auto; /* Mantém a proporção original da imagem */
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+  border-radius: 15px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 0px 30px #aa1c0c9a; /* Adiciona uma leve sombra para destacar a imagem */
 }
 
 .about__title{
@@ -450,6 +453,7 @@ the website, in dark theme
   background-color: var(--first-color);
   padding: 3rem 2rem 2rem;
   border-radius: 1rem;
+  background-color: #B553E6;
 }
 
 .steps__container{
@@ -471,6 +475,7 @@ the website, in dark theme
   display: inline-block;
   background-color: var(--first-color-alt);
   color: #FFF;
+  background-color: #fa307ac8;
   padding: .5rem .75rem;
   border-radius: .25rem;
   font-size: var(--h2-font-size);
@@ -522,23 +527,27 @@ the website, in dark theme
   color: var(--title-color);
 }
 
-.product__title{
-  margin-bottom: .25rem;
-}
-
-.product__button{
+.product__button {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: var(--first-color);
-  color: #FFF;
+  background-color: #B553E6;
+  color: #FFF; /* Cor de fundo do botão */
   padding: .25rem;
   border-radius: .35rem;
   font-size: 1.15rem;
 }
 
-.product__button:hover{
-  background-color: var(--first-color-alt);
+.product__button i { 
+  color: #FFF; /* Cor do ícone da sacolinha */
+}
+
+.product__button:hover {
+  background-color: #fa307ac8;
+}
+
+.product__button:hover i {
+  color: var(--first-color-lighten); /* Cor do ícone no hover */
 }
 
 .product__circle{
@@ -557,7 +566,7 @@ the website, in dark theme
 
 /*=============== QUESTIONS ===============*/
 .questions{
-  background-color: var(--first-color-lighten);
+  background-color: #f2bcd04a;
 }
 
 .questions__container{
@@ -573,6 +582,7 @@ the website, in dark theme
 .questions__item{
   background-color: var(--container-color);
   border-radius: .25rem;
+  background-color: #ff92d2f6;
 }
 
 .questions__item-title{
@@ -600,7 +610,7 @@ the website, in dark theme
 
 .questions__content{
   overflow: hidden;
-  height: 0;
+  height: 0
 }
 
 .questions__item,
@@ -619,7 +629,7 @@ the website, in dark theme
 /*Rotate icon, change color of titles and background*/
 .accordion-open .questions__header,
 .accordion-open .questions__content{
-  background-color: var(--first-color);
+  background-color: #fa307ac8;
 }
 
 .accordion-open .questions__item-title,
@@ -723,11 +733,11 @@ the website, in dark theme
 }
 
 /*=============== FOOTER ===============*/
-.footer__container{
+.footer__container {
   row-gap: 3rem;
 }
 
-.footer__logo{
+.footer__logo {
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
@@ -739,21 +749,21 @@ the website, in dark theme
   transition: .3s;
 }
 
-.footer__logo-icon{
+.footer__logo-icon {
   font-size: 1.15rem;
   color: var(--first-color);
 }
 
-.footer__logo:hover{
+.footer__logo:hover {
   color: var(--first-color);
 }
 
-.footer__title{
+.footer__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1-5);
 }
 
-.footer__subscribe{
+.footer__subscribe {
   background-color: var(--first-color-lighten);
   padding: .75rem;
   display: flex;
@@ -761,7 +771,7 @@ the website, in dark theme
   border-radius: .5rem;
 }
 
-.footer__input{
+.footer__input {
   width: 70%;
   padding: 0 .5rem;
   background: none;
@@ -770,50 +780,47 @@ the website, in dark theme
   outline: none;
 }
 
-.footer__button{
+.footer__button {
   padding: 1rem;
 }
 
-.footer__data{
-  display: grid;
-  row-gap: .75rem;
+.footer__data {
+  display: flex;             /* Alinha os itens em linha */
+  flex-wrap: wrap;           /* Permite que os itens se movam para a linha seguinte, se necessário */
+  gap: 2rem;                 /* Espaço entre as caixas de informações */
 }
 
-.footer__information{
+.footer__information {
   font-size: var(--small-font-size);
+  flex: 0 1 30%;             /* Ajuste a caixa para que ocupe até 30% do espaço disponível */
+  box-sizing: border-box;   /* Garante que o padding e as bordas não afetem a largura total */
+  text-align: justify;      /* Justifica o texto dentro da caixa */
+  display: flex;            /* Permite controle do alinhamento do conteúdo */
+  flex-direction: column;   /* Garante que o texto dentro da caixa seja exibido verticalmente */
+  justify-content: space-between; /* Alinha o texto de forma mais organizada dentro da caixa */
 }
 
-.footer__social{
+.footer__social, .footer__cards {
   display: inline-flex;
   column-gap: .75rem;
 }
 
-.footer__social-link{
+.footer__social-link {
   font-size: 1rem;
   color: var(--text-color);
   transition: .3s;
 }
 
-.footer__social-link:hover{
+.footer__social-link:hover {
   transform: translateY(-.25rem);
 }
 
-.footer__cards{
-  display: inline-flex;
-  align-items: center;
-  column-gap: .5rem;
-}
-.footer__card{
-  width: 35px;
-}
-
-.footer__copy{
+.footer__copy {
   text-align: center;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
   margin: 5rem 0 1rem;
 }
-
 /*=============== SCROLL UP ===============*/
 .scrollup{
   position: fixed;
