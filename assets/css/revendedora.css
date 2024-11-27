@@ -748,11 +748,30 @@ the website, in dark theme
   }
 }
 
-@media screen and (min-width: 1200px){
-  .home__social{
-    right: -3rem;
-    row-gap: 4.5rem;
+.footer__photo {
+  width: 100%; /* Ocupa toda a largura da célula no grid */
+  max-width: none; /* Remove qualquer limite máximo anterior */
+  height: auto; /* Mantém as proporções */
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer__container {
+  grid-template-columns: 1fr 1fr 1fr; /* Colunas mais equilibradas */
+  column-gap: 2rem; /* Espaçamento entre colunas */
+}
+
+.footer__content:nth-last-child(1) {
+  grid-column: 1 / -1; /* Faz o bloco da foto ocupar a largura de todas as colunas */
+}
+
+@media screen and (min-width: 992px) {
+  .footer__photo {
+      max-width: 1000px; /* Aumenta o limite máximo em telas maiores */
   }
+}
+
   .home__social-follow{
     font-size: var(--small-font-size);
   }
